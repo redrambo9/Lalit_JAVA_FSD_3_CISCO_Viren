@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+   <form action = "stufetchdetails.jsp" method = "get">
+     Name : <input type  = "text" name = "stuname">
+     Age : <input type ="text" name = "stuage">
+     Email : <input type  = "text" name = "stuemail">
+     Dept : <input type  = "text" name = "studept">
+     Course : <input type  = "text" name = "stucourse">
+     ID : <input type  = "text" name = "stuid">
+     <input type = "submit" value = "Submit">
+     </form>
+     
+     <p><b>Welcome Student:</b>
+   <%= request.getParameter("stuname")%>
+   <%= request.getParameter("stuage")%>
+   <%= request.getParameter("stuemail")%>
+   <%= request.getParameter("studept")%>
+   <%= request.getParameter("stucourse")%>
+   <%= request.getParameter("stuid")%>
+   
+</p>
+</body>
+</html>
